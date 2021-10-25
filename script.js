@@ -30,6 +30,7 @@ const searchBox = document.querySelector('.search_box');
       let now = new Date();
       let date = document.querySelector('.location .date');
       date.innerHTML = dateBuilder (now);
+      
 
       let temp = document.querySelector('.temprature')
 
@@ -41,6 +42,7 @@ const searchBox = document.querySelector('.search_box');
       let hilow = document.querySelector('.hi_low');
       hilow.innerHTML = `${Math.round(weather.main.temp_min) }°C / ${Math.round(weather.main.temp_max) }°C`;
   }
+
 
 
 
@@ -56,3 +58,5 @@ const searchBox = document.querySelector('.search_box');
       return `${day} ${date} ${months} ${years}`;
 
   }
+
+
